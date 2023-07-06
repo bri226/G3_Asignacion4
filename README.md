@@ -88,11 +88,11 @@ En la sección de <i>Extensions</i> (Ctrl + Shift + X), buscar e instalar:
 
 2. Crear aplicación con Flutter:
 
-    ![img01](img/create_project2.png)
+    ![img02](img/create_project2.png)
 
 3. Seleccionar la carpeta en la que se guardará el proyecto y crear nombre. El nombre del proyecto debe ir en minúsculas y separado por guiones bajos en caso fuera necesario.
 
-    ![img01](img/create_project3.png)
+    ![img03](img/create_project3.png)
 
 #### <b>Para Mac</b>
 
@@ -124,10 +124,62 @@ Para usarlas en un archivo dart, colocar esta línea:
     import 'package:http/http.dart' as http;
 ```
 
+## Firebase
+
+### Instalación de Firebase
+<p>
+
+- Con Node JS instalado, ejecutar (tanto para Windows como para Mac):
+
+        > npm install -g firebase-tools
 
 
+Seguir los siguientes pasos:
+1. Iniciar sesión en Firebase con cuenta de Google ([link](https://console.firebase.google.com/)).
+2. En la consola de Firebase, crear un proyecto.
+3. Agregar app para Flutter
+
+    ![img04](img/agregar_app_firebase.png)
+
+4. En la nueva pantalla:
+    - Preparar lugar de trabajo
+        - Tener instalado el CLI de Firebase e iniciar sesión en la consola a través de:
+            > firebase login
+        - Tener instalado el SDK de Flutter
+        - Tener un proyecto creado en Flutter
+    - Instalar y ejecutar la CLI de FlutterFire
+        - Ejecutar comando:
+            > dart pub global activate flutterfire_cli
+        - En la raíz del directorio del proyecto, ejecutar comando:
+            > flutterfire configure --project=<nombre_proyecto>-debbe
+        - Si no permite ejecutar ese último comando, ir a Inicio y buscar "Editar variables de entorno de esta cuenta" y agregar en PATH lo siguiente:
+            > C:\Users\<usuario>\AppData\Local\Pub\Cache\bin
+    - Inicializar Firebase:
+        - En el archivo dart, importar:
+
+        ```dart
+        import 'package:firebase_core/firebase_core.dart';
+        import 'firebase_options.dart';
+        ```
+
+        - Añadir el código:
+
+        ```dart
+        await Firebase.initializeApp(
+            options: DefaultFirebaseOptions.currentPlatform,
+        );
+        ```
+    
+    - En caso salga error en la primera librería, ejecutar este comando en la raíz del directorio:
+
+        > flutter pub add firebase_core
+
+    <i>Eso debería resolver el problema</i>
+
+    
 
 ---
-### Fuentes:
-+ https://ionicframework.com/docs/intro/cli
-+ https://nodejs.org/es/download
+### <b>Fuentes</b>:
++ SDK de Flutter: [link](https://docs.flutter.dev/get-started/install)
++ Referencia de Firebase CLI: [link](https://firebase.google.com/docs/cli?hl=es&authuser=0&_gl=1*1crcpgv*_ga*MTgyNDYwMjI3OC4xNjg2OTUzODQx*_ga_CW55HF8NVT*MTY4ODYxNDQ1OS40LjEuMTY4ODYxNTgxOC4wLjAuMA..#install_the_firebase_cli)
+

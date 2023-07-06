@@ -86,7 +86,7 @@ En la sección de <i>Extensions</i> (Ctrl + Shift + X), buscar e instalar:
 
 #### <b>Para Windows</b>
 
-1. Buscar archivo o Ctrl + P:
+1. Paleta de comandos o Ctrl + P:
 
         > Flutter: New Project
     

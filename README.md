@@ -121,7 +121,7 @@ Luego de colocarlas, se instalan a través de la terminal con el comando:
 
         > flutter pub get
 
-![img5](img/install_dependencies.png)
+![img5](img/install_dependencies.PNG)
 
 
 Para usarlas en un archivo dart, colocar esta línea:

@@ -1,11 +1,17 @@
 # Título 1 
 ## Indice
-- [Configuración del Ambiente de Desarrollo](#configuración-del-ambiente-de-desarrollo)
-    - [Instalación de Node JS](#instalacion-de-nodejs)
-    - [Ir a Fuentes](#fuentes)
+- [Configuración de la herramienta Flutter](#configuración-de-la-herramienta-flutter)
+    - [Para Windows](#para-windows)
+    - [Para Mac](#para-mac)
+- [Configurar Ambiente de Desarrollo o IDE (Visual Studio Code)](#configurar-ambiente-de-desarrollo-o-ide-visual-studio-code)
+    - [Añadir extensión](#añadir-extensión)
+    - [Crear proyecto en VS Code](#crear-proyecto-en-vs-code)
+        - [Para Windows](#para-windows-1)
+        - [Para Mac](#para-mac-1)
+- [Instalación de Dependencias y conexión al servidor](#instalación-de-dependencias-y-conexión-a-servidor)
 - [Ir a Fuentes](#fuentes)
 
-### <center>Título 3</center>
+
 ---
 
 ## Configuración de la herramienta Flutter
@@ -95,47 +101,32 @@ En la sección de <i>Extensions</i> (Ctrl + Shift + X), buscar e instalar:
         > cd <ruta_donde_se_va_a_crear_el_proyecto> 
         > flutter create <nombre_de_app> 
 
-## Conexión a un servidor web
+## Instalación de dependencias y conexión a servidor
 
-Primero hay que instalar las dependencias en el archivo <b>build.gradle</b>:
-
-```gradle
-dependencies {
-    ...
-    // retrofit
-    implementation "com.squareup.retrofit2:retrofit:2.9.0"
-    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
-    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
-    ...
-}
+Para la conexión al servidor, se usará el mismo backend que se utilizó para la entrega anterior. Las dependencias se colocan en el archivo <b>pubspec.yaml</b>:
+```yaml
+ dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3
 ```
 
-Sincronizamos las dependencias:
+Luego de colocarlas, se instalan a través de la terminal con el comando:
 
-![img01](img/01.png)
+        > flutter pub get
 
-Crear un arhivo backcliente:
+![img01](img/install_dependencies.png)
 
-```kotlin
-    const val BASE_URL = "https://programamovilv2.jose-jesusjes13.repl.co/"
-    //const val BASE_URL ="http://192.168.1.27:8000/"
-    private val retrofit: Retrofit by lazy {
-        Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-    }
 
-    val pokemonService: PokemonService by lazy {
-        retrofit.create(PokemonService::class.java)
-    }
+Para usarlas en un archivo dart, colocar esta línea:
 
-    fun <T> buildService(service: Class<T>): T{
-        return retrofit.create(service)
-    }
-}
+```dart
+    import 'package:http/http.dart' as http;
 ```
+
+
+
+
 ---
 ### Fuentes:
 + https://ionicframework.com/docs/intro/cli

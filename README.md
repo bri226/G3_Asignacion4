@@ -69,7 +69,7 @@
 
     - Instalar los software que falten u otras tareas que se indiquen en los resultados de la ejecución del comando.
 
-    ![img1](img/flutter-doctor.png)
+    ![img1](img/flutter-doctor.PNG)
  
 
 

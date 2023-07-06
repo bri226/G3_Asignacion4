@@ -219,17 +219,23 @@ Este proceso inicia cuando el usuario decide crear una cuenta en la aplicación.
 
 ![img06](img/CrearCuenta.png)
 
+Mockup relacionado: [clic aquí](#imagen-1)
+
 ### <b>2. Recuperar contraseña</b>
 
 En caso el usuario olvide su contraseña, esta opción estará disponible en el view del Login. Al utilizar esta opción, el usuario deberá identificarse con su correo electrónico para verificar la existencia de la cuenta. Si la cuenta existe, se le enviará un mensaje al correo electrónico del usuario que contendrá un link para reestablecer la contraseña.
 
 ![img07](img/CambiarPass.png)
 
+Mockup relacionado: [clic aquí](#imagen-2)
+
 ### <b>3. Iniciar sesión</b>
 
 Este proceso inicia cuando el usuario quiere ingresar al contenido de la aplicación. El usuario deberá identificarse con su correo electrónico y contraseña, la cual será verificado si existe, para posteriormente ser autenticado para ingresar a sus datos en la aplicación.
 
 ![img08](img/Login.png)
+
+Mockup relacionado: [clic aquí](#imagen-3)
 
 ### <b>4. Gestionar perfil</b>
 
@@ -238,11 +244,36 @@ En caso el usuario quiera modificar los datos dentro de su perfil, debe verifica
 
 ![img09](img/GestionarPerfil.png)
 
+Mockup relacionado: [clic aquí](#imagenes-4)
+
 ### <b>5. Visualizar otros usuarios</b>
 
 El usuario podrá ser capaz de visualizar el contenido subido por los usuarios que él sigue o es seguido. Así también como el número de usuarios que lo siguen o que él sigue.
 
 ![img10](img/Visualizar.png)
+
+Mockup relacionado: [clic aquí](#imagenes-5)
+
+## <b>Mockups</b>
+
+### Imagen 1
+![img11](mockups/crear-cuenta.PNG)
+
+### Imagen 2
+![img12](mockups/restablecer-contraseña.PNG)
+
+### Imagen 3
+![img13](mockups/inicio-sesion.PNG)
+
+### Imagenes 4
+![img14](mockups/gestion-perfil.PNG)
+![img15](mockups/gestion-perfil-2.PNG)
+
+### Imagenes 5
+![img16](mockups/perfil-principal.PNG)
+![img17](mockups/seguidores.PNG)
+![img18](mockups/seguidos.PNG)
+
 
 
 ---

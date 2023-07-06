@@ -3,7 +3,7 @@
 - [Configuración de la herramienta Flutter](#configuración-de-la-herramienta-flutter)
     - [Para Windows](#para-windows)
     - [Para Mac](#para-mac)
-- [Configurar Ambiente de Desarrollo o IDE (Visual Studio Code)](#configurar-ambiente-de-desarrollo-o-ide-visual-studio-code)
+- [Configuración de Ambiente de Desarrollo o IDE (Visual Studio Code)](#configurar-ambiente-de-desarrollo-o-ide-visual-studio-code)
     - [Añadir extensión](#añadir-extensión)
     - [Crear proyecto en VS Code](#crear-proyecto-en-vs-code)
         - [Para Windows](#para-windows-1)
@@ -69,8 +69,11 @@
 
     - Instalar los software que falten u otras tareas que se indiquen en los resultados de la ejecución del comando.
 
+    ![img01](img/flutter-doctor.png)
+ 
 
-## <b>Configurar Ambiente de Desarrollo o IDE (Visual Studio Code)</b>
+
+## <b>Configuración Ambiente de Desarrollo o IDE (Visual Studio Code)</b>
 
 ### <b>Añadir extensión</b>
 En la sección de <i>Extensions</i> (Ctrl + Shift + X), buscar e instalar:

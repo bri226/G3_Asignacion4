@@ -1,5 +1,5 @@
-# Título 1 
-## Indice
+# <b>PROYECTO - GRUPO 3</b>
+## Índice
 - [Configuración de la herramienta Flutter](#configuración-de-la-herramienta-flutter)
     - [Para Windows](#para-windows)
     - [Para Mac](#para-mac)
@@ -9,12 +9,15 @@
         - [Para Windows](#para-windows-1)
         - [Para Mac](#para-mac-1)
 - [Instalación de Dependencias y conexión al servidor](#instalación-de-dependencias-y-conexión-a-servidor)
+- [Firebase](#firebase)
+- [Diagrama de Despliegue](#diagrama-de-despliegue)
+- [Requerimientos no funcionales](#requerimientos-no-funcionales)
+- [Casos de uso](#casos-de-uso)
 - [Ir a Fuentes](#fuentes)
-
 
 ---
 
-## Configuración de la herramienta Flutter
+## <b>Configuración de la herramienta Flutter</b>
 
 ### <b>Para Windows</b>
 
@@ -67,16 +70,16 @@
     - Instalar los software que falten u otras tareas que se indiquen en los resultados de la ejecución del comando.
 
 
-## Configurar Ambiente de Desarrollo o IDE (Visual Studio Code)
+## <b>Configurar Ambiente de Desarrollo o IDE (Visual Studio Code)</b>
 
 ### <b>Añadir extensión</b>
 En la sección de <i>Extensions</i> (Ctrl + Shift + X), buscar e instalar:
 - "Flutter" de [DartCode.org](https://dartcode.org/) 
 - "Dart" de [DartCode.org](https://dartcode.org/) <i>(usualmente se instala junto con Flutter)</i>
 
+<br>
+
 ### <b>Crear proyecto en VS Code</b>
-<p>
-</p>
 
 #### <b>Para Windows</b>
 
@@ -101,7 +104,7 @@ En la sección de <i>Extensions</i> (Ctrl + Shift + X), buscar e instalar:
         > cd <ruta_donde_se_va_a_crear_el_proyecto> 
         > flutter create <nombre_de_app> 
 
-## Instalación de dependencias y conexión a servidor
+## <b>Instalación de dependencias y conexión a servidor</b>
 
 Para la conexión al servidor, se usará el mismo backend que se utilizó para la entrega anterior. Las dependencias se colocan en el archivo <b>pubspec.yaml</b>:
 ```yaml
@@ -124,10 +127,10 @@ Para usarlas en un archivo dart, colocar esta línea:
     import 'package:http/http.dart' as http;
 ```
 
-## Firebase
+## <b>Firebase</b>
 
 ### Instalación de Firebase
-<p>
+<br>
 
 - Con Node JS instalado, ejecutar (tanto para Windows como para Mac):
 
@@ -174,9 +177,73 @@ Seguir los siguientes pasos:
 
         > flutter pub add firebase_core
 
-    <i>Eso debería resolver el problema</i>
+        <i>Eso debería resolver el problema</i>
 
+## <b>Diagrama de Despliegue</b>
+<br>
+
+![img05](img/diagramadespliegue.png)
+
+## <b>Requerimientos no funcionales</b>
+
+ **1. Usabilidad:**
+- La interfaz de usuario debe ser intuitiva y fácil de usar para usuarios no técnicos.
+- Los tiempos de carga de la aplicación deben ser rápidos, para minimizar la espera del usuario.
+- La aplicación debe ser compatible con una amplia gama de dispositivos móviles y tamaños de pantalla.
+
+**2. Rendimiento:**
+- Los tiempos de respuesta de la aplicación deben ser consistentes incluso bajo cargas de trabajo pesadas.
+- La aplicación debe optimizarse para minimizar el consumo de recursos (CPU, memoria, batería) en el dispositivo móvil.
     
+**3. Seguridad:**
+- Los datos personales de los usuarios deben ser almacenados y transmitidos de manera segura, utilizando técnicas de encriptación adecuadas.
+ - La aplicación debe implementar medidas de autenticación y autorización para garantizar el acceso seguro a las funciones y datos.
+- Se debe realizar una validación adecuada de los datos de entrada para prevenir ataques como inyecciones de código o ataques de denegación de servicio.
+  
+**4. Escalabilidad:**
+- La aplicación debe ser capaz de manejar un aumento en el número de usuarios y transacciones sin degradar su rendimiento.
+- Debe ser posible agregar nuevos servicios o funcionalidades a la aplicación sin afectar negativamente su rendimiento o disponibilidad.
+  
+**5. Fiabilidad:**
+- La aplicación debe ser estable y no debe bloquearse o cerrarse inesperadamente.
+- La aplicación debe tener mecanismos de recuperación ante fallas, de modo que pueda continuar funcionando correctamente después de una interrupción.
+
+<br>
+
+## <b>Casos de Uso</b>
+<br>
+
+### <b>1. Crear cuenta</b>
+
+Este proceso inicia cuando el usuario decide crear una cuenta en la aplicación. En caso no sea registrado con una cuenta no existente, el usuario deberá brindar su nombre, su nickname, un correo electrónico y una contraseña.
+
+![img06](img/CrearCuenta.png)
+
+### <b>2. Recuperar contraseña</b>
+
+En caso el usuario olvide su contraseña, esta opción estará disponible en el view del Login. Al utilizar esta opción, el usuario deberá identificarse con su correo electrónico para verificar la existencia de la cuenta. Si la cuenta existe, se le enviará un mensaje al correo electrónico del usuario que contendrá un link para reestablecer la contraseña.
+
+![img07](img/CambiarPass.png)
+
+### <b>3. Iniciar sesión</b>
+
+Este proceso inicia cuando el usuario quiere ingresar al contenido de la aplicación. El usuario deberá identificarse con su correo electrónico y contraseña, la cual será verificado si existe, para posteriormente ser autenticado para ingresar a sus datos en la aplicación.
+
+![img08](img/Login.png)
+
+### <b>4. Gestionar perfil</b>
+
+En caso el usuario quiera modificar los datos dentro de su perfil, debe verificarse que el usuario que está realizando los cambios sea el mismo que ha iniciado sesión y no otro usuario. Si el usuario es verificado como propietario, será capaz de cambiar su foto de perfil, su apodo, su correo electrónico, su nombre y su contraseña.
+
+
+![img09](img/GestionarPerfil.png)
+
+### <b>5. Visualizar otros usuarios</b>
+
+El usuario podrá ser capaz de visualizar el contenido subido por los usuarios que él sigue o es seguido. Así también como el número de usuarios que lo siguen o que él sigue.
+
+![img10](img/Visualizar.png)
+
 
 ---
 ### <b>Fuentes</b>:

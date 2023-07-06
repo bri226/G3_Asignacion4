@@ -136,6 +136,34 @@ Crear un arhivo backcliente:
     }
 }
 ```
+## Diagrama de despliegue
+$~$
+![img01](img/diagramadespliegue.png)
+## Requerimientos no funcionales
+
+ **1. Usabilidad:**
+- La interfaz de usuario debe ser intuitiva y fácil de usar para usuarios no técnicos.
+- Los tiempos de carga de la aplicación deben ser rápidos, para minimizar la espera del usuario.
+- La aplicación debe ser compatible con una amplia gama de dispositivos móviles y tamaños de pantalla.
+
+**2. Rendimiento:**
+- Los tiempos de respuesta de la aplicación deben ser consistentes incluso bajo cargas de trabajo pesadas.
+- La aplicación debe optimizarse para minimizar el consumo de recursos (CPU, memoria, batería) en el dispositivo móvil.
+    
+**3. Seguridad:**
+- Los datos personales de los usuarios deben ser almacenados y transmitidos de manera segura, utilizando técnicas de encriptación adecuadas.
+ - La aplicación debe implementar medidas de autenticación y autorización para garantizar el acceso seguro a las funciones y datos.
+- Se debe realizar una validación adecuada de los datos de entrada para prevenir ataques como inyecciones de código o ataques de denegación de servicio.
+  
+**4. Escalabilidad:**
+- La aplicación debe ser capaz de manejar un aumento en el número de usuarios y transacciones sin degradar su rendimiento.
+- Debe ser posible agregar nuevos servicios o funcionalidades a la aplicación sin afectar negativamente su rendimiento o disponibilidad.
+  
+**5. Fiabilidad:**
+- La aplicación debe ser estable y no debe bloquearse o cerrarse inesperadamente.
+- La aplicación debe tener mecanismos de recuperación ante fallas, de modo que pueda continuar funcionando correctamente después de una interrupción.
+
+$~$
 ---
 ### Fuentes:
 + https://ionicframework.com/docs/intro/cli

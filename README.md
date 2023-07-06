@@ -69,7 +69,7 @@
 
     - Instalar los software que falten u otras tareas que se indiquen en los resultados de la ejecución del comando.
 
-    ![img01](img/flutter-doctor.png)
+    ![img1](img/flutter-doctor.png)
  
 
 
@@ -90,15 +90,15 @@ En la sección de <i>Extensions</i> (Ctrl + Shift + X), buscar e instalar:
 
         > Flutter: New Project
     
-    ![img01](img/create_project1.png)
+    ![img2](img/create_project1.png)
 
 2. Crear aplicación con Flutter:
 
-    ![img02](img/create_project2.png)
+    ![img3](img/create_project2.png)
 
 3. Seleccionar la carpeta en la que se guardará el proyecto y crear nombre. El nombre del proyecto debe ir en minúsculas y separado por guiones bajos en caso fuera necesario.
 
-    ![img03](img/create_project3.png)
+    ![img4](img/create_project3.png)
 
 #### <b>Para Mac</b>
 
@@ -121,7 +121,7 @@ Luego de colocarlas, se instalan a través de la terminal con el comando:
 
         > flutter pub get
 
-![img01](img/install_dependencies.png)
+![img5](img/install_dependencies.png)
 
 
 Para usarlas en un archivo dart, colocar esta línea:
@@ -145,7 +145,7 @@ Seguir los siguientes pasos:
 2. En la consola de Firebase, crear un proyecto.
 3. Agregar app para Flutter
 
-    ![img04](img/agregar_app_firebase.png)
+    ![img6](img/agregar_app_firebase.png)
 
 4. En la nueva pantalla:
     - Preparar lugar de trabajo
@@ -185,7 +185,7 @@ Seguir los siguientes pasos:
 ## <b>Diagrama de Despliegue</b>
 <br>
 
-![img05](img/diagramadespliegue.png)
+![img7](img/diagramadespliegue.png)
 
 ## <b>Requerimientos no funcionales</b>
 
@@ -220,7 +220,7 @@ Seguir los siguientes pasos:
 
 Este proceso inicia cuando el usuario decide crear una cuenta en la aplicación. En caso no sea registrado con una cuenta no existente, el usuario deberá brindar su nombre, su nickname, un correo electrónico y una contraseña.
 
-![img06](img/CrearCuenta.png)
+![img8](img/CrearCuenta.png)
 
 Mockup relacionado: [clic aquí](#imagen-1)
 
@@ -228,7 +228,7 @@ Mockup relacionado: [clic aquí](#imagen-1)
 
 En caso el usuario olvide su contraseña, esta opción estará disponible en el view del Login. Al utilizar esta opción, el usuario deberá identificarse con su correo electrónico para verificar la existencia de la cuenta. Si la cuenta existe, se le enviará un mensaje al correo electrónico del usuario que contendrá un link para reestablecer la contraseña.
 
-![img07](img/CambiarPass.png)
+![img9](img/CambiarPass.png)
 
 Mockup relacionado: [clic aquí](#imagen-2)
 
@@ -236,7 +236,7 @@ Mockup relacionado: [clic aquí](#imagen-2)
 
 Este proceso inicia cuando el usuario quiere ingresar al contenido de la aplicación. El usuario deberá identificarse con su correo electrónico y contraseña, la cual será verificado si existe, para posteriormente ser autenticado para ingresar a sus datos en la aplicación.
 
-![img08](img/Login.png)
+![img10](img/Login.png)
 
 Mockup relacionado: [clic aquí](#imagen-3)
 
@@ -245,7 +245,7 @@ Mockup relacionado: [clic aquí](#imagen-3)
 En caso el usuario quiera modificar los datos dentro de su perfil, debe verificarse que el usuario que está realizando los cambios sea el mismo que ha iniciado sesión y no otro usuario. Si el usuario es verificado como propietario, será capaz de cambiar su foto de perfil, su apodo, su correo electrónico, su nombre y su contraseña.
 
 
-![img09](img/GestionarPerfil.png)
+![img11](img/GestionarPerfil.png)
 
 Mockup relacionado: [clic aquí](#imagenes-4)
 
@@ -253,29 +253,29 @@ Mockup relacionado: [clic aquí](#imagenes-4)
 
 El usuario podrá ser capaz de visualizar el contenido subido por los usuarios que él sigue o es seguido. Así también como el número de usuarios que lo siguen o que él sigue.
 
-![img10](img/Visualizar.png)
+![img12](img/Visualizar.png)
 
 Mockup relacionado: [clic aquí](#imagenes-5)
 
 ## <b>Mockups</b>
 
 ### Imagen 1
-![img11](mockups/crear-cuenta.PNG)
+![img13](mockups/crear-cuenta.PNG)
 
 ### Imagen 2
-![img12](mockups/restablecer-contraseña.PNG)
+![img14](mockups/restablecer-contraseña.PNG)
 
 ### Imagen 3
-![img13](mockups/inicio-sesion.PNG)
+![img15](mockups/inicio-sesion.PNG)
 
 ### Imagenes 4
-![img14](mockups/gestion-perfil.PNG)
-![img15](mockups/gestion-perfil-2.PNG)
+![img16](mockups/gestion-perfil.PNG)
+![img17](mockups/gestion-perfil-2.PNG)
 
 ### Imagenes 5
-![img16](mockups/perfil-principal.PNG)
-![img17](mockups/seguidores.PNG)
-![img18](mockups/seguidos.PNG)
+![img18](mockups/perfil-principal.PNG)
+![img19](mockups/seguidores.PNG)
+![img20](mockups/seguidos.PNG)
 
 
 

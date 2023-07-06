@@ -98,7 +98,7 @@ En la sección de <i>Extensions</i> (Ctrl + Shift + X), buscar e instalar:
 
 3. Seleccionar la carpeta en la que se guardará el proyecto y crear nombre. El nombre del proyecto debe ir en minúsculas y separado por guiones bajos en caso fuera necesario.
 
-    ![img4](img/create_project3.png)
+    ![img4](img/create_project3.PNG)
 
 #### <b>Para Mac</b>
 
